@@ -8,13 +8,16 @@
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/framework/directives/framework.css" rel="stylesheet" />
+    <link href="ext-modules/menu/directives/menu.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     
     
     <script src="ext-modules/menu/menuModule.js"></script>
-    
+    <script src="ext-modules/menu/controllers/menuController.js"></script>
+    <script src="ext-modules/menu/directives/mainMenu.js"></script>
+    <script src="ext-modules/menu/directives/menuItem.js"></script>
 
     <script src="ext-modules/dashboard/dashboardModule.js"></script>
     
@@ -30,6 +33,12 @@
 <body class="container-fluid">
     <framework title="Whitewater Adventures"
                subtitle="Administrative Application"
-               icon-file=""></framework>
+               icon-file="">
+        <main-menu>
+            <menu-item icon="fa-dashboard" label="Dashboard" route="dashboard"></menu-item>
+            <menu-item icon="fa-location-arrow" label="Locations" route="locations"></menu-item>
+            <menu-item icon="fa-user" label="Raft Guides" route="guides"></menu-item>
+        </main-menu>
+    </framework>
 </body>
 </html>

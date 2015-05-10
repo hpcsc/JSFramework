@@ -80,6 +80,12 @@
     <Content Include="ext-modules\framework\directives\framework.html" />
     <Content Include="ext-modules\framework\directives\framework.js" />
     <Content Include="ext-modules\framework\frameworkModule.js" />
+    <Content Include="ext-modules\menu\controllers\menuController.js" />
+    <Content Include="ext-modules\menu\directives\menu.css" />
+    <Content Include="ext-modules\menu\directives\mainMenu.html" />
+    <Content Include="ext-modules\menu\directives\mainMenu.js" />
+    <Content Include="ext-modules\menu\directives\menuItem.html" />
+    <Content Include="ext-modules\menu\directives\menuItem.js" />
     <Content Include="ext-modules\menu\menuModule.js" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
