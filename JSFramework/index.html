@@ -12,12 +12,14 @@
 
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
     
     
     <script src="ext-modules/menu/menuModule.js"></script>
     <script src="ext-modules/menu/controllers/menuController.js"></script>
     <script src="ext-modules/menu/directives/mainMenu.js"></script>
     <script src="ext-modules/menu/directives/menuItem.js"></script>
+    <script src="ext-modules/menu/directives/menuGroup.js"></script>
 
     <script src="ext-modules/dashboard/dashboardModule.js"></script>
     
@@ -38,6 +40,11 @@
             <menu-item icon="fa-dashboard" label="Dashboard" route="dashboard"></menu-item>
             <menu-item icon="fa-location-arrow" label="Locations" route="locations"></menu-item>
             <menu-item icon="fa-user" label="Raft Guides" route="guides"></menu-item>
+            <menu-group label="Equipment" icon="fa-gears">
+                <menu-item label="Rafts" icon="fa-unlink" route="rafts"></menu-item>
+                <menu-item label="Paddles" icon="fa-magic" route="paddles"></menu-item>
+                <menu-item label="Life Vests" icon="fa-life-ring" route="vests"></menu-item>
+            </menu-group>
         </main-menu>
     </framework>
 </body>

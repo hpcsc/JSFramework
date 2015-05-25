@@ -7,6 +7,11 @@ angular.module("framework").controller("frameworkController",
 
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
+        $scope.isMenuVertical = true;
+
+        $scope.$on("menu-orientation-changed-event", function (evt, data) {
+            $scope.isMenuVertical = data.isMenuVertical;
+        });
 
         $scope.$on("menu-item-selected-event", function (evt, data) {
             $scope.routeString = data.route;
@@ -40,7 +45,9 @@ angular.module("framework").controller("frameworkController",
 
         var broadcastMenuState = function() {
             $rootScope.$broadcast("menu-show", {
-                show: $scope.isMenuVisible
+                show: $scope.isMenuVisible,
+                isVertical: $scope.isMenuVertical,
+                allowHorizontalToggle: !$scope.isMenuButtonVisible
             });
         };
 

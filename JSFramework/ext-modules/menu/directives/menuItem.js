@@ -15,6 +15,10 @@ angular.module("menu").directive("menuItem", function () {
                 return el === ctrl.getActiveElement();
             };
 
+            scope.isVertical = function() {
+                return ctrl.isVertical() || el.parents('.subitem-section').length > 0;
+            };
+
             el.on("click", function(evt) {
                 evt.stopPropagation();
                 evt.preventDefault();

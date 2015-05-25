@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-angular.module("menu").directive("mainMenu", function () {
+angular.module("menu").directive("mainMenu", ["$timeout", function ($timeout) {
     return {
         transclude: true,
         scope: {
@@ -9,7 +9,10 @@ angular.module("menu").directive("mainMenu", function () {
         controller: "menuController",
         templateUrl: "/ext-modules/menu/directives/mainMenu.html",
         link: function(scope, el, attr) {
-            
+            var item = el.find('.selectable-item:first');
+            $timeout(function() {
+                item.trigger('click');
+            });
         }
     };
-});
+}]);

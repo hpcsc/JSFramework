@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -84,6 +87,8 @@
     <Content Include="ext-modules\menu\directives\menu.css" />
     <Content Include="ext-modules\menu\directives\mainMenu.html" />
     <Content Include="ext-modules\menu\directives\mainMenu.js" />
+    <Content Include="ext-modules\menu\directives\menuGroup.html" />
+    <Content Include="ext-modules\menu\directives\menuGroup.js" />
     <Content Include="ext-modules\menu\directives\menuItem.html" />
     <Content Include="ext-modules\menu\directives\menuItem.js" />
     <Content Include="ext-modules\menu\menuModule.js" />
