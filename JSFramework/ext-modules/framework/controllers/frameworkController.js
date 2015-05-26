@@ -2,8 +2,8 @@
 
 angular.module("framework").controller("frameworkController",
 [
-    "$scope", "$window", "$timeout", "$rootScope",
-    function ($scope, $window, $timeout, $rootScope) {
+    "$scope", "$window", "$timeout", "$rootScope", "$location",
+    function ($scope, $window, $timeout, $rootScope, $location) {
 
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
@@ -15,6 +15,7 @@ angular.module("framework").controller("frameworkController",
 
         $scope.$on("menu-item-selected-event", function (evt, data) {
             $scope.routeString = data.route;
+            $location.path(data.route);
             checkWidth();
             broadcastMenuState();
         });
