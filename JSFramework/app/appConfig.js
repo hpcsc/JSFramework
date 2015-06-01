@@ -2,8 +2,8 @@
     $provide.decorator("$exceptionHandler", [
         "$delegate", function($delegate) {
             return function(exception, cause) {
-                $delegate(exception, cause);
-                alert(exception.measure);
+                $delegate(exception, cause);                
+                alert(exception);
             };
         }
     ]);

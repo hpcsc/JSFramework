@@ -11,12 +11,20 @@
     <link href="ext-modules/framework/directives/framework.css" rel="stylesheet" />
     <link href="ext-modules/menu/directives/menu.css" rel="stylesheet" />
     <link href="ext-modules/dashboard/directives/dashboard.css" rel="stylesheet" />
+    
+    <!-- Widget CSS files -->
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/angular-gridster.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>    
     
     
     <script src="ext-modules/menu/menuModule.js"></script>
@@ -27,7 +35,7 @@
 
     <script src="ext-modules/dashboard/dashboardModule.js"></script>
     <script src="ext-modules/dashboard/directives/dashboard.js"></script>
-    
+    <script src="ext-modules/dashboard/directives/widgetBody.js"></script>
 
     <script src="ext-modules/framework/frameworkModule.js"></script>
     <script src="ext-modules/framework/controllers/frameworkController.js"></script>
@@ -37,9 +45,20 @@
     <script src="app/appModule.js"></script>
     <script src="app/appConfig.js"></script>
     <script src="app/appRouteConfig.js"></script>
+    <script src="app/services/dataService.js"></script>
+
     <script src="app/directives/wwaDashboard.js"></script>
     <script src="app/directives/wwaGuides.js"></script>
-    <script src="app/directives/wwaLocations.js"></script>
+    <script src="app/directives/wwaLocations.js"></script>    
+    
+    <!-- Widget JS files -->
+    <script src="app/widgets/wwaTemperature/wwaTemperature.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventory.js"></script>
+    <script src="app/widgets/wwaEmployee/wwaEmployee.js"></script>
+    
+    <!-- Settings Dialog -->
+    <script src="app/dialogs/wwaSelectLocationController.js"></script>
+    <script src="app/dialogs/wwaSelectEmployeeController.js"></script>
 </head>
 <body class="container-fluid">
     <framework title="Whitewater Adventures"

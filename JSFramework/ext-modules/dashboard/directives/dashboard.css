@@ -44,3 +44,32 @@
     padding: 8px;
     padding-left: 20px;
 }
+
+.dashboard-controls {
+    float: right;
+}
+
+.widget-menu-area {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+}
+
+.widget-menu-area .dropdown-menu {
+    left: -20px;
+    padding-left: 15px;
+    min-width: 50px;
+}
+
+.widget-menu-area a {
+    color: white;
+}
+
+.widget-menu-area i {
+    cursor: pointer;
+}
+
+.dropdown-backdrop {
+    position: static;
+}

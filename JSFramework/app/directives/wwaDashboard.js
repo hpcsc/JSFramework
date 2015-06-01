@@ -20,21 +20,51 @@ angular.module("app").directive("wwaDashboard", [
                     swapping: false
                 };
 
-                scope.widgets = [
+                scope.widgetDefinitions = [
                     {
-                        title: "First",
-                        sizeX: 3,
-                        sizeY: 3,
-                        row: 0,
-                        col: 0
+                        title: "Temperature",
+                        settings: {
+                            sizeX: 3,
+                            sizeY: 3,
+                            minSizeX: 2,
+                            minSizeY: 2,
+                            template: "<wwa-temperature></wwa-temperature",
+                            widgetSettings: {
+                                id: 1000,
+                                templateUrl: "/app/dialogs/wwaSelectLocation.html",
+                                controller: "wwaSelectLocationController"
+                            }
+                        }
                     },
                     {
-                        title: "Second",
-                        sizeX: 2,
-                        sizeY: 4,
-                        row: 0,
-                        col: 5
+                        title: "Inventory",
+                        settings: {
+                            sizeX: 5,
+                            sizeY: 3,                            
+                            template: "<wwa-inventory></wwa-inventory",
+                            widgetSettings: {
+                                id: 1002,
+                                templateUrl: "/app/dialogs/wwaSelectLocation.html",
+                                controller: "wwaSelectLocationController"
+                            }
+                        }
+                    },
+                    {
+                        title: "Employee",
+                        settings: {
+                            sizeX: 5,
+                            sizeY: 3,                            
+                            template: "<wwa-employee></wwa-employee",
+                            widgetSettings: {
+                                id: 5001,
+                                templateUrl: "/app/dialogs/wwaSelectEmployee.html",
+                                controller: "wwaSelectEmployeeController"
+                            }
+                        }
                     }
+                ];
+
+                scope.widgets = [
                 ];
             }
         }
